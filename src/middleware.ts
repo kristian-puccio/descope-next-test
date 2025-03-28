@@ -3,8 +3,7 @@ import { authMiddleware } from '@descope/nextjs-sdk/server';
 export default authMiddleware({
   // The Descope project ID to use for authentication
   // Defaults to process.env.DESCOPE_PROJECT_ID
-  projectId: '',
-  baseUrl: 'http://localhost:4200',
+  // baseUrl: 'http://localhost:4200',
   // redirectUrl: '/sign-in',
 
   // The URL to redirect to if the user is not authenticated

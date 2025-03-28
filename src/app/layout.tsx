@@ -24,7 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <AuthProvider projectId="">
+    <AuthProvider
+      projectId={process.env.DESCOPE_PROJECT_ID as string}
+      baseUrl={process.env.DESCOPE_BASE_URL as string}
+    >
       <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
